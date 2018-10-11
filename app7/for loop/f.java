@@ -1,0 +1,44 @@
+class f
+{
+
+	public static void main(String[] args) 
+	{
+		int i=1;
+		for(System.out.println("INIT"+i);
+		test(i);//boolean condition
+		i++,System.out.println("CHANGE:"+i))
+		{
+		System.out.println("loop body:"+i);
+		}
+		System.out.println("main end:"+i);
+	}
+		public static boolean test(int i)
+		{
+			boolean flag=(i<=5);
+			System.out.println("boolean for"+i+"is"+flag);
+			return flag;
+	}
+}
+
+/* o/p
+INIT1
+boolean for1istrue
+loop body:1
+CHANGE:2
+boolean for2istrue
+loop body:2
+CHANGE:3
+boolean for3istrue
+loop body:3
+CHANGE:4
+boolean for4istrue
+loop body:4
+CHANGE:5
+boolean for5istrue
+loop body:5
+CHANGE:6
+boolean for6isfalse
+main end:6
+*/
+
+//initialization is executed only one time
